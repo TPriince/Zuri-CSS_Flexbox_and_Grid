@@ -8,25 +8,26 @@
 }
 
 body {
-    background-color: black;
+    background-color: hsl(0, 0%, 95%);
     font-size: 15px;
 }
 
 nav {
     text-align: center;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 a {
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 
 .container {
     width: 100%;
     max-width: 900px;
-    background-color: white;
-    margin: 0px auto;
+    margin: 50px auto 0px auto;
 }
 
 .wrapper {
@@ -42,7 +43,7 @@ h2 {
     font-family: 'Big Shoulders Display', cursive;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: white;
+    color: hsl(0, 0%, 95%);
 }
 
 p {
@@ -50,7 +51,7 @@ p {
     font-size: x-small;
     margin-bottom: 2rem;
     line-height: 2.2vh;
-    color: white;
+    color: hsla(0, 0%, 100%, 0.75);
 }
 
 
@@ -87,6 +88,7 @@ button {
     border: 0.5px solid white;
     border-radius: 20px;
     width: 6rem;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .first_b {
@@ -95,7 +97,7 @@ button {
 
 .first_b:hover {
     background-color: hsl(31, 77%, 52%);
-    color: white;
+    color: hsl(0, 0%, 95%);
     border-color: white;
     cursor: pointer;
 }
@@ -106,7 +108,7 @@ button {
 
 .second_b:hover {
     background-color: hsl(184, 100%, 22%);
-    color: white;
+    color: hsl(0, 0%, 95%);
     border-color: white;
     cursor: pointer;
 }
@@ -117,7 +119,7 @@ button {
 
 .third_b:hover {
     background-color: hsl(179, 100%, 13%);
-    color: white;
+    color: hsl(0, 0%, 95%);
     border-color: white;
     cursor: pointer;
 }
@@ -136,6 +138,10 @@ button {
 
 
 @media screen and (max-width: 395px) {
+    .container {
+        margin: 0 auto;
+    }
+
     .wrapper {
         margin: 0 auto;
         padding: 60px;
@@ -161,10 +167,10 @@ button {
     }
 
     p {
-        line-height: 3vh;
+        line-height: 2.8vh;
     }
 
     button {
-        margin-bottom: 16px;
+        margin: 8px auto 16px auto;
     }
 }
